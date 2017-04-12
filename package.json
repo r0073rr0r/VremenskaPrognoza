@@ -1,0 +1,17 @@
+{
+  "name": "VremenskaPrognoza",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "r0073rr0r",
+  "contributors": [],
+  "dependencies": {
+    "request": "^2.81.0",
+    "tryjson": "^1.1.4"
+  }
+}
