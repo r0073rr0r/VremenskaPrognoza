@@ -19,9 +19,9 @@ function vreme(grad) {
         if (!error) {
             var data = tryjson.parse(body);
             //console.log(data);
-            console.log("Grad: " + data.name + " - Temperatura: " + data.main.temp + "°C - Pritisak: " + data.main.pressure + ""
-                    +"\ - Temp.min: " + data.main.temp_min + "°C - Temp.max: " + data.main.temp_max + "°C - Brzina vetra: " + data.wind.speed + "m/s -"
-                    + " Koordinate: " + data.coord.lon + ", " + data.coord.lat + "");
+            console.log("Grad: " + data.name + " - Temperatura: " + data.main.temp + "°C - Pritisak: " + data.main.pressure
+                    + "\ - Temp.min: " + data.main.temp_min + "°C - Temp.max: " + data.main.temp_max + "°C - Brzina vetra: "
+                    + data.wind.speed + "m/s -" + " Koordinate: " + data.coord.lon + ", " + data.coord.lat + "");
         } else {
             console.log("Nepoznato");
         }
