@@ -1,16 +1,20 @@
-//Get from procedure
-if (process.argv[2] === "" || process.argv[2] === null || typeof process.argv[2] === 'undefined' || !process.argv[2]) {
-    console.log("Morate uneti grad.");
-} else {
-    var grad = process.argv[2];
-    if (!process.argv[3]) {
-        vreme(grad);
+//Detect if called through require or directly by command line
+if (require.main === module) {
+    if (process.argv[2] === "" || process.argv[2] === null || typeof process.argv[2] === 'undefined' || !process.argv[2]) {
+        console.log("Morate uneti grad.");
     } else {
-        grad = grad + process.argv[3];
-        vreme(grad);
+        var grad = process.argv[2];
+        if (!process.argv[3]) {
+            vreme(grad);
+        } else {
+            grad = grad + process.argv[3];
+            vreme(grad);
+        }
     }
+} else {
+    //Required as a module
 }
-//Funkcija za svlacenje Vremenske prognoze
+//Function for weather
 function vreme(grad) {
     var request = require("request");
     var tryjson = require('tryjson');
@@ -26,3 +30,5 @@ function vreme(grad) {
         }
     });
 }
+
+exports.vreme = vreme;
