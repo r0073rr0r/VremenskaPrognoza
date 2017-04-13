@@ -1,6 +1,12 @@
 # VremenskaPrognoza
 NodeJS Module
 
+Download via NPM:
+<pre>npm install vremenskaprognoza --save</pre>
+
+Download via GitHub:
+<pre>git clone https://github.com/r0073rr0r/VremenskaPrognoza.git</pre>
+
 Use with arguments:
 <pre>node index.js Beograd</pre>
 
