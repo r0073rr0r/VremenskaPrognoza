@@ -30,5 +30,4 @@ function vreme(grad) {
         }
     });
 }
-
 exports.vreme = vreme;
